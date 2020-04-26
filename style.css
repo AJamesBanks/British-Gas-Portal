@@ -11,6 +11,10 @@ body {
   color: #333f48;
 }
 
+.hidden {
+  display: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -35,6 +39,53 @@ header ul li i {
   margin: 0 20px;
   font-weight: 500;
   font-size: 20px;
+}
+
+/* Submenu? */
+
+header ul li ul {
+  position: absolute;
+  background: #ffb11f;
+  top: 40px;
+  right: 300px;
+  display: block;
+  width: 100px;
+  padding: 0;
+  transition: 0.2s;
+  opacity: 1;
+  visibility: hidden;
+}
+
+header ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+header ul li ul li {
+  color: #fff;
+  padding: 5px 5px;
+  margin: 0;
+  text-align: center;
+  border-bottom: solid 1px #f4f4f4;
+}
+
+header ul li ul li:hover {
+  opacity: 0.3;
+}
+
+header ul li:hover {
+  cursor: pointer;
+}
+
+header ul li ul.downloads {
+  position: absolute;
+  background: #ffb11f;
+  top: 40px;
+  right: 30px;
+  display: block;
+  width: 300px;
+  padding: 0;
+  transition: 0.2s;
 }
 
 /* Showcase*/
@@ -102,10 +153,57 @@ header ul li i {
 
 .tools-container .tools {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
 .tools-container .tools img {
   height: 220x;
+}
+
+/* 
+  ***** Modal Styling *****
+*/
+
+/* Smaller screens */
+
+@media (max-width: 768px) {
+  header .logo {
+    display: none;
+  }
+
+  /* .hidden {
+    display: block;
+    padding: 15px;
+  } */
+
+  header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .showcase-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .showcase-container .left {
+    display: block;
+    width: 100%;
+  }
+
+  .showcase-container .right {
+    display: block;
+    width: 100%;
+  }
+
+  .offer p {
+    font-size: 18px;
+  }
+
+  .tools-container {
+    display: none;
+  }
 }

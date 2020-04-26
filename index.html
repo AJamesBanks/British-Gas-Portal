@@ -12,16 +12,34 @@
   </head>
   <body>
     <header>
-      <!-- <i class="fas fa-bars"></i> -->
+      <i class="fas fa-bars hidden"></i>
       <div class="logo">
         Customer Relations
       </div>
 
       <ul>
+        
+        <li>Links <i class="fas fa-chevron-down"></i>
+          <ul>
+            <li>EPDQ</li>
+            <li>EPDQ</li>
+            <li>EPDQ</li>
+            <li>EPDQ</li>
+            <li>EPDQ</li>
+            <li>EPDQ</li>
+          </ul>
+        </li>
         <li>Reports <i class="fas fa-chevron-down"></i></li>
-        <li>Links <i class="fas fa-chevron-down"></i></li>
-        <li>Reports <i class="fas fa-chevron-down"></i></li>
-        <li>Downloads <i class="fas fa-chevron-down"></i></li>
+        <li>Downloads <i class="fas fa-chevron-down"></i>
+          <ul class = "downloads">
+            <li>CR Letter headed paper</li>
+            <li>EPDQ</li>
+            <li>EPDQ</li>
+            <li>EPDQ</li>
+            <li>EPDQ</li>
+            <li>EPDQ</li>
+          </ul>
+        </li>
       </ul>
 
       <!-- <form>
@@ -37,7 +55,7 @@
         <div class="text-a">
             <img src="./images/bg-logo-mobile.svg" alt="">
             <h1>Customer Relations Portal</h1>   
-            <button>Address Book <i class="fas fa-arrow-right"></i></button>         
+            <button id = "addressBtn">Address Book <i class="fas fa-arrow-right"></i></button>         
         </div>
       </div>
       </div>
@@ -52,14 +70,20 @@
     <!-- BG tools -->
     <div class="tools-container">
       <div class="tools">
-        <img
+        <img class="centrica-rec"
           src="./images/centrica-recognition.png"
           alt="centrica-recognition"
         />
       </div>
     </div>
+    <!-- Modal -->
+
+    
+    <script src="app.js"></script>
   </body>
 </html>
+
+
 
 
 
